@@ -1,11 +1,13 @@
 package org.example.lesson_1
 
+const val sumOfSecondsInSpace = 6480
+const val oneHourInSeconds = 3600
+
 fun main() {
-    val sumOfSecondsInSpace = 6480
 
-    val hour: Float = sumOfSecondsInSpace / 3600F
-    val minute = (hour - 1) * 60
-    val seconds = "00"
+    val hours = sumOfSecondsInSpace / oneHourInSeconds
+    val minute = (sumOfSecondsInSpace % oneHourInSeconds) / 60
+    val seconds = sumOfSecondsInSpace % 60
 
-    println("${hour.toInt()}:${minute.toInt()}:$seconds")
+    println(String.format("%02d:%02d:%02d", hours, minute, seconds))
 }
