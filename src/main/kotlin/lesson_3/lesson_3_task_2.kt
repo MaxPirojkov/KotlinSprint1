@@ -1,15 +1,13 @@
 package org.example.lesson_3
 
 fun main(){
-    val hourToStart = 9
-    val minuteToStart = 39
-    val timeInWayMinutes = 457
-    val minuteInHour = 60
+    val yearsOldBeforeMarried = 20
+    val yearsOldAfterMarried = 22
+    val maidenName = "Андреева"
+    val name = "Татьяна"
+    val middleName = "Сергеевна"
+    val husbandSurname = "Сидорова"
 
-    val timeToStartInMinute = hourToStart * minuteInHour + minuteToStart
-    val timeToFinishInMinute = timeToStartInMinute + timeInWayMinutes
-    val hourToFinish = timeToFinishInMinute / minuteInHour
-    val minuteToFinish = timeToFinishInMinute % minuteInHour
-
-    println(String.format("%02d:%02d", hourToFinish, minuteToFinish ))
+    println("$maidenName $name $middleName, $yearsOldBeforeMarried")
+    println("$husbandSurname $name $middleName, $yearsOldAfterMarried")
 }
